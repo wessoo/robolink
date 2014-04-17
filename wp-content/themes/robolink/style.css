@@ -1,0 +1,272 @@
+/* 
+Theme name: 	Robolink
+Theme URI:	http: //robolink.wessoo.com/twentythirteen
+Description:	Child theme for the Twenty Thirteen theme
+Author:		Wesley Hsu
+Author URI:	
+Template: 	twentythirteen
+Version: 	1.0
+*/
+
+@import url("../twentythirteen/style.css");
+
+html {
+	background: #c2c2c2;
+}
+
+a:visited {
+	color: white;
+}
+
+.site {
+	background-color: #e1e1e1;
+	max-width: 100%;
+}
+
+.hentry {
+	padding: 10px 0 5px 0;
+}
+
+
+/* HEADER STUFF */
+.site-header .home-link {
+	min-height: 140px;
+	max-width: 100%;
+}
+
+.masthead-custom {
+	background: url(http://robolink.wessoo.com/wp-content/uploads/2013/12/robolink_banner.jpg) white no-repeat top;
+	background-size: 700px;
+}
+
+.entry-header .entry-title {
+	color: #7d7d7d;
+}
+
+@media (max-width: 900px) {
+	.site-header .home-link {
+		min-height: 125px;
+	}
+	.masthead-custom {
+		background-size: 65%;
+	}
+}
+
+@media (max-width: 768px) {
+	.site-header .home-link {
+		min-height: 100px;
+	}
+}
+
+@media (max-width: 644px) {
+	.site-header .home-link {
+		min-height: 80px;
+	}
+	.masthead-custom {
+		background-size: 70%;
+	}
+}
+
+/* NAV BAR */
+.navbar {
+	background-color: #4488d3;
+	max-width: 100%;
+}
+
+.main-navigation {
+	max-width: 960px;
+}
+
+.nav-menu li a {
+	font-size: 20px;
+	color: white;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+	color: white;
+	font-weight: bolder;
+	font-style: normal;
+	/*background: url(http://robolink.wessoo.com/wp-content/uploads/2013/12/tab.png) center bottom no-repeat;*/
+}
+
+.nav-menu li > a,
+.nav-menu li a {
+	transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+	background-color: #7bb5f5;
+}
+
+ul.nav-menu, div.nav-menu > ul {
+	padding: 0;
+}
+
+.nav-shopping-cart {
+	padding-left: 0px !important;
+   	background-image: url(http://robolink.wessoo.com/wp-content/uploads/2013/12/shoppingcart.png);
+	background-position: left;
+   	background-repeat: no-repeat;
+}
+
+/* LANDING PAGE */
+.landing-feature-header {
+	color: #00ac4d !important;
+}
+
+.landing-feature-body {
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+@media (min-width: 644px) {
+	.landing-feature-body {
+		font-size: 22px;
+		font-weight: lighter;
+	}
+}
+
+@media (min-width: 768px) {
+	.landing-feature-body {
+		font-size: 30px;
+		font-weight: lighter;
+	}
+}
+
+.front-feature {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.front-feature h1 {
+	clear: none;
+}
+
+.front-feature img {
+	float: left;
+}
+
+.front-feature-content-container {
+	/*float: left;*/
+}
+
+.front-feature-content-container .entry-header, 
+.front-feature-content-container .entry-content, 
+.front-feature-content-container .entry-summary, 
+.front-feature-content-container .entry-meta {
+	max-width: 960px;
+}
+
+.featurette-dark-bg {
+	width: 100%;
+	background: #d7d7d7;
+	padding: 20px 0;
+}
+
+.featurette-light-bg {
+	padding: 20px 0;
+}
+
+
+/* PRODUCTS PAGE TEMPLATE */
+.default_product_display {
+	background-color: white;
+}
+
+.page-template-page-products-php .entry-content {
+	max-width: 960px;
+}
+
+.page-template-page-products-php .entry-header .entry-title, .page-template-generic-page-php .entry-header .entry-title {
+	text-align: center;
+}
+
+#default_products_page_container .imagecol img {
+	border: 0;
+}
+
+/* PRODUCTS */
+.default_product_display .wpsc_description, #content .default_product_display .wpsc_description {
+	font-size: 16px;
+}
+
+.wpsc_product_title {
+	color: #2e3191;
+	font-weight: bold;
+}
+
+.custom-product-price {
+	font-size: 30px;
+	font-family: Bitter, Georgia, serif;
+	font-weight: bold;
+	color: #983a42;
+}
+
+.custom-from {
+	font-size: 20px;
+	color: black;
+}
+
+/* PRODUCT ADD TO CART BUTTONS */
+#content input.wpsc_buy_button {
+	font-size: 16px;
+}
+button, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"] {
+	background: #00ac4d;
+	border: none;
+	border-radius: 5px;
+	/*background: -webkit-linear-gradient(top, #00ac4d 0%, #d94412 100%);
+	background: linear-gradient(to bottom, #00ac4d 0%, #d94412 100%);*/
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	background: #00ac4d; /* Old browsers 67c692*/
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	background: #1f884e; /* Old browsers */
+	border: none;
+	padding: 11px 24px 11px;
+}
+
+.default_product_display .wpsc_product_price {
+	margin-bottom: 0;
+}
+
+.default_product_display .wpsc_buy_button_container {
+	margin-top: -25px;
+}
+
+/* FORMS */
+button, input, textarea {
+	border: 0;
+	border-radius: 6px;
+	margin: 5px 0;
+}
+
+/* FOOTER */
+.site-footer {
+	background-color: #c2c2c2;
+	padding: 30px 0;
+}
+
+/* CHECKOUT PAGE */
+#checkout_page_container table {
+	line-height: 3;
+}
